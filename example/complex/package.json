@@ -7,17 +7,21 @@
     "url": "git://github.com/dominictarr/complex.git"
   },
   "dependencies": {
-    "domready": "~0.2.13",
-    "shoe": "~0.0.15",
-    "ecstatic": "~0.4.12",
+    "domready": "^1.0.8",
+    "ecstatic": "^2.2.1",
+    "kv": "~1.1.1",
     "mux-demux": "~3.7.8",
-    "kv": "~1.1.1"
+    "reconnect": "^2.0.2",
+    "shoe": "~0.0.15"
   },
   "devDependencies": {
-    "tap": "0.3.0"
+    "browserify": "^14.4.0",
+    "tap": "^10.7.0"
   },
   "scripts": {
-    "test": "tap test"
+    "test": "tap test",
+    "build": "browserify client.js > bundle.js",
+    "start": "node server"
   },
   "author": "'Dominic Tarr' <dominic.tarr@gmail.com> (http://dominictarr.com)",
   "license": "MIT"
